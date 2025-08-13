@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="theme-color" content="#86603A" />
+ <meta name="msvalidate.01" content="5C02DD5DB3288B2EC37329417878FEF8" />
+ <meta name="google-site-verification" content="Pu_OXs5o2vR-0a2XX0pVq4B1mm_Ye7rTPCOSy0TjmiE" />
+ <meta name="description" content="موقع حصن المسلم - الأذكار الكاملة مكتوبة ومسموعة. تصفح أذكار الصباح والمساء، أذكار النوم، أذكار الصلاة، وأكثر من 100 ذكر من أحاديث النبي صلى الله عليه وسلم. استمع إلى الأذكار بصوت جميل أو اقرأها مكتوبة بخط واضح. موقع شامل ومتكامل لحصن المسلم والأذكار اليومية.">
+ <meta name="keywords" content="حصن المسلم, أذكار, الأذكار الكاملة, أذكار مكتوبة, أذكار مسموعة, أذكار الصباح, أذكار المساء, أذكار النوم, أذكار الصلاة, أذكار اليومية, أذكار النبي, أحاديث الأذكار, أذكار صوتية, أذكار بصوت, أذكار اسلامية, أذكار يومية, أذكار قصيرة, أذكار طويلة, أذكار القرآن, أذكار السنه, حصن المسلم مكتوب, حصن المسلم صوت, حصن المسلم كامل, أذكار الصباح والمساء, أذكار بعد الصلاة, أذكار الاستيقاظ, أذكار النوم من السنة, أذكار الصباح من السنة, أذكار المساء من السنة, أذكار الحفظ, أذكار الرقية, أذكار السفر, أذكار العمل, أذكار المذاكرة, أذكار الرزق, أذكار التوبة, أذكار الاستغفار">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="var-styles.css" type="text/css" media="all" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <link rel="icon" href="images.jpg">
+ <title>حصن المسلم</title>
+</head>
+
+<body> <!-- المحتوى الرئيسي -->
+ <div id="main-content">
+  <header class="header">
+   <div class="header-right">
+    <h1 id="title_header">حصن المسلم</h1>
+   </div>
+   <div class="header-left">
+    <div class="search-container">
+     <button id="searchToggle" class="icon-button">
+      <i class="fa-solid fa-magnifying-glass"></i>
+     </button>
+     <input type="text" id="Search" class="search-input" placeholder="ابحث..." />
+     <button id="infoButton" class="icon-button" onclick="toggleInfo()">
+      <i class="fa-solid fa-user"></i>
+     </button>
+     <button id="settingsButton" class="icon-button" onclick="toggleSettingsMenu()">
+      <i class="fa-solid fa-gear"></i>
+     </button>
+    </div>
+   </div>
+  </header>
+  <p id="info">
+   التعريف بالكتاب:
+   "حصن المسلم" هو كتاب يحتوي على مجموعة من الأذكار والأدعية المستوحاة من الأحاديث النبوية الشريفة. الكتاب يُعتبر مصدرًا هامًا للمسلم يهدف إلى التقرب إلى الله تعالى وحماية النفس من الشرور، كما يعين المسلم على تذكُّر الله في أوقات مختلفة من اليوم.
+   <br />
+   <br />
+   التعريف بالكاتب:
+   الشيخ سعيد بن علي بن وهف القحطاني هو مؤلف الكتاب، وهو عالم سعودي معروف بتخصصه في العلوم الشرعية، ويُعتبر من العلماء البارزين في مجال التفسير والعقيدة والحديث. قام بتأليف "حصن المسلم" بهدف تسهيل وصول الأذكار النبوية الصحيحة إلى المسلمين بشكل مرتب ومبسط
+   <br />
+   <button id="hideButton">اخفاء</button>
+  </p>
+  <div class="setting">
+   <div id="settingsMenu">
+    <h3>الإعدادات</h3>
+    <label>تغيير السمة:</label>
+    <select id="themeSelector">
+     <option value="light">فاتح</option>
+     <option value="dark">غامق</option>
+     <option value="brown">بني</option>
+     <option value="blue">أزرق</option>
+     <option value="green">أخضر</option>
+     <option value="gold">ذهبي</option>
+     <option value="turquoise">فيروزي</option>
+    </select>
+    
+    <label>حجم الخط:</label>
+    <select id="fontSizeSelector">
+     <option value="12px">12 px</option>
+     <option value="14px">14 px</option>
+     <option value="16px">16 px</option>
+     <option value="18px">18 px</option>
+     <option value="20px">20 px</option>
+     <option value="22px">22 px</option>
+     <option value="24px">24 px</option>
+     
+     
+    </select>
+   </div>
+  </div>
+ </div>
+ <div id="sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <h3>القائمة الرئيسية</h3>
+    <button class="close-btn" onclick="toggleSidebar()">
+      <i class="fa-solid fa-times"></i>
+    </button>
+  </div>
+  
+  <div class="sidebar-content">
+    <ul class="sidebar-menu">
+      <li>
+        <a href="index.html">
+          <div class="menu-item">
+            <i class="fas fa-home"></i>
+            <span>الصفحة الرئيسية</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="menu-item">
+            <i class="fas fa-mosque"></i>
+            <span>من نحن</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="menu-item">
+            <i class="fas fa-book-quran"></i>
+            <span>ابلغنا عن خطأ </span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="menu-item">
+            <i class="fas fa-info-circle"></i>
+            <span>عن التطبيق</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+    
+    <div class="social-section">
+      <h4>تابعنا على مواقع التواصل</h4>
+      <div class="social-menu">
+        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="sidebar-footer">
+    <p>حصن المسلم <span>© 2024</span></p>
+  </div>
+</div>
+ 
+ <!-- زر فتح القائمة -->
+ <button id="sidebarToggle" class="sidebar-toggle" onclick="toggleSidebar()">
+  <i class="fas fa-bars"></i>
+ </button>
+ <main>
+  <table id="table">
+   <tbody id="table_tbody"></tbody>
+  </table>
+  
+  <div id="category_content">
+   <h2 id="title_index"></h2>
+  </div>
+  <div id="alrt1" style="display: none;"></div>
+  <div id="alrt" style="display: none;">تم النسخ!</div>
+  
+ </main>
+ 
+ 
+ 
+ 
+ <script src="main.js"></script>
+ 
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+:root {
+	/* الألوان الأساسية */
+	--primary-light: #F5F0E8;
+	--primary-dark: #5D432C;
+	--primary-medium: #8C6A4F;
+	--primary-accent: #B7A58B;
+	
+	/* ألوان التباين */
+	--contrast-light: #FFFFFFFC;
+	--contrast-dark: #000000;
+	
+	/* ألوان التدرجات البنية */
+	--brown-light: #E3D5C7;
+	--brown-medium-light: #A3885D;
+	--brown-medium: #8C6A4F;
+	--brown-dark: #5D432C;
+	
+	/* ألوان إضافية */
+	--gold: #FFD700;
+	--silver: #C0C0C0;
+	--turquoise: #40E0D0;
+	--blue: #7C87FF;
+	--green: #25D366;
+	--pink: #FC2274FC;
+	--orange: #FFA033;
+	--yellow: #FFF68FFC;
+	
+	/* ألوان الوسائط الاجتماعية */
+	--facebook: #3B5998;
+	--instagram: #E1306C;
+	--whatsapp: #25D366;
+	--telegram: #0088CC;
+	
+	/* ألوان النص */
+	--text-light: #F5F0E8;
+	--text-dark: #5D432C;
+	--text-accent: #8C6A4F;
+	
+	/* ألوان الخلفيات */
+	--bg-light: #F5F0E8;
+	--bg-medium: #E3D5C7;
+	--bg-dark: #8C6A4F;
+	
+	/* ألوان الأزرار */
+	--button-primary: #8C6A4F;
+	--button-hover: #A3885D;
+	--button-secondary: #B7A58B;
+	--button-accent: #FC2274FC;
+	
+	/* ألوان الحدود */
+	--border-light: #E2E2E2;
+	--border-medium: #2F591C;
+	--border-dark: #FF3333;
+	
+	/* تأثيرات الظل */
+	--shadow-small: 0 2px 4px rgba(93, 67, 44, 0.2);
+	--shadow-medium: 0 4px 6px rgba(93, 67, 44, 0.3);
+	--shadow-large: 0 6px 8px rgba(93, 67, 44, 0.4);
+	
+	/* أنماط الخطوط */
+	--font-primary: "font", serif;
+	--font-secondary: "hafs", sans-serif;
+	
+	/* أحجام الخطوط */
+	--font-size-small: 14px;
+	--font-size-medium: 18px;
+	--font-size-large: 24px;
+	--font-size-xlarge: 1rem;
+	
+	/* أنماط الزوايا */
+	--border-radius-small: 5px;
+	--border-radius-medium: 10px;
+	--border-radius-large: 20px;
+	--border-radius-circle: 50%;
+	
+	/* مسافات */
+	--spacing-small: 5px;
+	--spacing-medium: 10px;
+	--spacing-large: 20px;
+	
+	/* متغيرات جديدة للـ header */
+	--bg-color-head-foter: #D8C69F;
+	--header-border-color: #195D68;
+	--header-text-color: var(--text-dark);
+  --sidebar-bg: #f8f1e5;
+  --sidebar-header-bg: #86603A;
+  --sidebar-header-text: #fff;
+  --sidebar-text: #333;
+  --sidebar-hover: #e6d9c5;
+  --sidebar-border: #ddd;
+  --sidebar-footer-text: #777;
+  --sidebar-toggle-bg: #86603A;
+  --sidebar-toggle-text: #fff;
+  --sidebar-toggle-hover: #6d4e2e;
+
+/* تعديلات 
+	/* متغيرات جديدة لـ audio player */
+	--audio-bg-color: #FFFFFF;
+	--audio-controls-bg: #E2D29E;
+	--audio-border-color: var(--border-light);
+}
